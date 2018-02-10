@@ -1,0 +1,5 @@
+file { '/home/ppious/mylink':
+        ensure => link,
+        target => '/root/test',
+        owner => root,
+}

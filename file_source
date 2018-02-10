@@ -1,0 +1,4 @@
+file { '/home/ppios/pdf':
+       source=> "http://www.fablar.in/yahoo_site_admin/assets/docs/Mans_Search_for_Meaning.78114942.pdf",
+       owner => root,
+}

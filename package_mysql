@@ -1,0 +1,12 @@
+package { 'mysql-server':
+            ensure => installed,
+}
+service { 'mysql':
+           ensure => running,
+           restart => 'systemctl restart mysql',
+           require => Package['mysql-server'],
+}
+file { '/etc/mysql/my.cnf':
+        audit => mtime,
+        notify => Service["mysql"],        
+}       

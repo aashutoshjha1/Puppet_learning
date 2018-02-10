@@ -1,0 +1,4 @@
+package { 'collectd-core' :
+          ensure => installed,
+}
+
